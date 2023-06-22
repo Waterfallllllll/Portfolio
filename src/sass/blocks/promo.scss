@@ -1,0 +1,30 @@
+.promo {
+    min-height: 100vh;
+    padding: 200px 0 594px 0;
+    background: url('../img/main_bg.jpg') no-repeat;
+    position: relative;
+
+    h2 {
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    h1 {
+        color: #FFF;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 60px;
+    }
+
+    &__link {
+        width: 135px;
+        height: 45px;
+        flex-shrink: 0;
+        background: #FFA501;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 700;
+    }
+}

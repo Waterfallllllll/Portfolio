@@ -4,10 +4,19 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    position: fixed;
     z-index: 2;
     top: 230px;
     left: 50px;
+
+    &__link {
+        &:hover {
+            svg path {
+                fill: red;
+            }
+        }
+    }
+
     &__divider {
         width: 2px;
         height: 70px;

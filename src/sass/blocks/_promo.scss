@@ -1,0 +1,25 @@
+.promo {
+    min-height: 100vh;
+    padding: 200px 0 594px 0;
+    background: url('../img/main_bg.jpg') no-repeat;
+    position: relative;
+
+    &__wrapper {
+        margin-top: 25px;
+    }
+
+    &__subtitle {
+        position: relative;
+        z-index: 2;
+        @include before_circle;
+    }
+
+    &__link {
+        color: #FFF;
+        font-size: 14px;
+        font-family: Poppins;
+        font-weight: 700;
+        margin-right: 44px;
+        text-decoration: none;
+    }
+}

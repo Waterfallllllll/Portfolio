@@ -22,9 +22,8 @@
         padding-top: 7px;
 
         &-divider {
-            width: 60px;
-            height: 3px;
-            background: $main-color;
+            @include divider;
+            margin: 0;
             margin-bottom: 20px;
         }
 
@@ -45,7 +44,7 @@
         display: grid;
         grid-template-columns: 40px 200px;
         column-gap: 20px;
-        
+
         &__block {
             margin-right: 20px;
             margin-top: 15px;
@@ -65,6 +64,7 @@
             font-size: 12px;
             font-weight: 500;
         }
+
         &__title {
             line-height: 24px;
         }

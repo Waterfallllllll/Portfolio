@@ -5,6 +5,17 @@
         @include divider;
     }
 
+    &__title {
+        text-align: center;
+        @include before_circle;
+        position: relative;
+
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
     &__container {
         padding: 60px 11px 0 11px;
         display: grid;

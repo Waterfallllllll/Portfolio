@@ -19,21 +19,21 @@
     &__container {
         padding: 60px 50px 0 50px;
         display: grid;
-        grid-template-columns: repeat(2, 366px);
+        grid-template-columns: repeat(2, minmax(366px, auto));
         grid-template-rows: repeat(1, minmax(162px, auto));
         justify-content: space-between;
     }
 
     &__wrapper {
         display: grid;
-        grid-template-columns: 366px;
+        grid-template-columns: minmax(366px, auto);
         grid-template-rows: repeat(3, minmax(44px, auto));
         row-gap: 15px;
     }
 
     &-content {
         display: grid;
-        grid-template-columns: repeat(2, 183px);
+        grid-template-columns: repeat(2, minmax(183px, auto));
         grid-template-rows: repeat(2, 22px);
         row-gap: 5px;
         position: relative;
@@ -55,9 +55,8 @@
         }
 
         &__subtitle {
-            position: absolute;
-            right: 0;
             line-height: 24px;
+            justify-self: end;
         }
 
         &__descr {

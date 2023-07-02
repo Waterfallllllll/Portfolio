@@ -8,11 +8,59 @@
     .container {
         max-width: 960px;
     }
+
+    .aboutme {
+        &__container {
+            grid-template-columns: 400px 520px;
+            column-gap: 40px;
+        }
+
+        &__secondcontainer {
+            grid-template: repeat(2, minmax(115px, auto))/repeat(2, 250px);
+            column-gap: 20px;
+        }
+
+        &-wrapper {
+            grid-template-columns: 40px 195px;
+            column-gap: 15px;
+        }
+    }
+    .utility {
+        &__container {
+            grid-template-columns: 301px 375px;
+        }
+    }
 }
+
 
 @media (max-width: 992px) {
     .container {
         max-width: 720px;
+    }
+
+    .aboutme {
+        &__container {
+            grid-template-columns: 300px 380px;
+        }
+
+        &__secondcontainer {
+            grid-template-columns: 380px;
+            grid-auto-rows: minmax(115px, auto);
+        }
+
+        &-wrapper {
+            grid-template-columns: 40px 320px;
+            column-gap: 20px;
+        }
+    }
+    .utility {
+        &-wrapper {
+            grid-template-columns: 38px 251px;
+        }
+        &__container {
+            grid-template-columns: 200px 300px;
+            column-gap: 170px;
+        }
     }
 }
 
@@ -34,11 +82,40 @@
             width: 300px;
         }
     }
+
+    .aboutme {
+        margin-top: 40px;
+
+        &__container {
+            grid-template: 450px auto auto / 1fr;
+        }
+
+        &__item {
+            grid-row: unset;
+        }
+
+        &-wrapper {
+            grid-template-columns: 40px 200px;
+            column-gap: 20px;
+        }
+
+        &__secondcontainer {
+            grid-template-columns: repeat(2, 260px);
+        }
+    }
+    .utility {
+        &__subtitle {
+            font-size: 24px;
+        }
+        &__container {
+            grid-template-columns: 293px;
+        }
+    }
 }
 
 @media (max-width: 576px) {
     .container {
-        width: 100%;
+        max-width: 100%;
         padding: 0 10px;
     }
 
@@ -48,19 +125,50 @@
             font-size: 26px;
         }
     }
+
     .hamburger {
         right: 20px;
     }
+
     .menu {
         &__block {
             width: 250px;
             padding-left: 20px;
         }
     }
+
     .promo {
         background: url('../img/Background.jpg') no-repeat 57%/cover;
+
         &__button {
             margin-top: 30px;
         }
+    }
+
+    .aboutme {
+        &__container {
+            grid-template: 340px auto auto / 100%;
+        }
+
+        &__secondcontainer {
+            grid-template-columns: 1fr;
+        }
+        .title {
+            &_fz36 {
+                font-size: 24px;
+            }
+        }
+    }
+    .utility {
+        &__container {
+            grid-template-columns: 272px;
+        }
+        &-wrapper {
+            grid-template-columns: 37px 206px;
+            &__subtitle {
+                font-size: 9px;
+            }
+        }
+
     }
 }
